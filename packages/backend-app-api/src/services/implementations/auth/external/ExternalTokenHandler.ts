@@ -20,7 +20,7 @@ import {
 } from '@backstage/backend-plugin-api';
 import { LegacyTokenHandler } from './legacy';
 import { StaticTokenHandler } from './static';
-import { TokenHandler } from './types';
+import { AccessRestriptionsMap, TokenHandler } from './types';
 
 const NEW_CONFIG_KEY = 'backend.auth.externalAccess';
 const OLD_CONFIG_KEY = 'backend.auth.keys';
@@ -58,7 +58,7 @@ export class ExternalTokenHandler {
           `Unknown type '${type}' in ${NEW_CONFIG_KEY}, expected one of ${valid}`,
         );
       }
-      handler.add(handlerConfig.getConfig('options'));
+      handler.add(handlerConfig);
     }
 
     // Load the old keys too
@@ -77,7 +77,13 @@ export class ExternalTokenHandler {
 
   constructor(private readonly handlers: TokenHandler[]) {}
 
-  async verifyToken(token: string): Promise<{ subject: string } | undefined> {
+  async verifyToken(token: string): Promise<
+    | {
+        subject: string;
+        accessRestrictions?: AccessRestriptionsMap;
+      }
+    | undefined
+  > {
     for (const handler of this.handlers) {
       const result = await handler.verifyToken(token);
       if (result) {
