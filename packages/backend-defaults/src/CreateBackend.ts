@@ -35,6 +35,7 @@ import {
   authServiceFactory,
   httpAuthServiceFactory,
   userInfoServiceFactory,
+  healthServiceFactory,
 } from '@backstage/backend-app-api';
 import { eventsServiceFactory } from '@backstage/plugin-events-node';
 
@@ -58,6 +59,7 @@ export const defaultServiceFactories = [
   userInfoServiceFactory(),
   urlReaderServiceFactory(),
   eventsServiceFactory(),
+  healthServiceFactory(),
 ];
 
 /**
