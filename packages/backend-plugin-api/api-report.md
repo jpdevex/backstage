@@ -334,9 +334,17 @@ export interface HttpAuthService {
 }
 
 // @public (undocumented)
+export interface HttpRouterHealthCheckConfig {
+  // (undocumented)
+  handler: () => Promise<any>;
+}
+
+// @public (undocumented)
 export interface HttpRouterService {
   // (undocumented)
   addAuthPolicy(policy: HttpRouterServiceAuthPolicy): void;
+  // (undocumented)
+  healthCheckConfig(healthCheckOptions: HttpRouterHealthCheckConfig): void;
   // (undocumented)
   use(handler: Handler): void;
 }
