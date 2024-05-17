@@ -193,6 +193,7 @@ export namespace coreServices {
   const rootConfig: ServiceRef<RootConfigService, 'root'>;
   const database: ServiceRef<DatabaseService, 'plugin'>;
   const discovery: ServiceRef<DiscoveryService, 'plugin'>;
+  const health: ServiceRef<HealthService, 'root'>;
   const httpAuth: ServiceRef<HttpAuthService, 'plugin'>;
   const httpRouter: ServiceRef<HttpRouterService, 'plugin'>;
   const lifecycle: ServiceRef<LifecycleService, 'plugin'>;
@@ -313,6 +314,9 @@ export interface ExtensionPointConfig {
 }
 
 // @public (undocumented)
+export interface HealthService {}
+
+// @public (undocumented)
 export interface HttpAuthService {
   // (undocumented)
   credentials<TAllowed extends keyof BackstagePrincipalTypes = 'unknown'>(
@@ -334,17 +338,9 @@ export interface HttpAuthService {
 }
 
 // @public (undocumented)
-export interface HttpRouterHealthCheckConfig {
-  // (undocumented)
-  handler: () => Promise<any>;
-}
-
-// @public (undocumented)
 export interface HttpRouterService {
   // (undocumented)
   addAuthPolicy(policy: HttpRouterServiceAuthPolicy): void;
-  // (undocumented)
-  healthCheckConfig(healthCheckOptions: HttpRouterHealthCheckConfig): void;
   // (undocumented)
   use(handler: Handler): void;
 }
