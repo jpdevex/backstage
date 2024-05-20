@@ -1,5 +1,15 @@
 # @backstage/plugin-app-backend
 
+## 0.3.68
+
+### Patch Changes
+
+- 82c2b90: Restore the support of external config schema in the router of the `app-backend` plugin, which was broken in release `1.26.0`.
+  This support is critical for dynamic frontend plugins to have access to their config values.
+- Updated dependencies
+  - @backstage/backend-common@0.22.1
+  - @backstage/backend-plugin-api@0.6.19
+
 ## 0.3.66
 
 ### Patch Changes

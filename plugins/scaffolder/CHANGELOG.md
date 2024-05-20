@@ -1,5 +1,13 @@
 # @backstage/plugin-scaffolder
 
+## 1.20.1
+
+### Patch Changes
+
+- 612a453: Change owner to project for azure host
+- Updated dependencies
+  - @backstage/plugin-scaffolder-react@1.8.6
+
 ## 1.20.0
 
 ### Minor Changes

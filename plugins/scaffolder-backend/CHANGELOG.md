@@ -1,5 +1,17 @@
 # @backstage/plugin-scaffolder-backend
 
+## 1.22.8
+
+### Patch Changes
+
+- 7d30d95: Fixing issue with log meta fields possibly being circular refs
+- d617103: Updating the logger redaction message to something less dramatic
+- Updated dependencies
+  - @backstage/backend-tasks@0.5.24
+  - @backstage/backend-common@0.22.1
+  - @backstage/plugin-scaffolder-backend-module-github@0.2.9
+  - @backstage/backend-plugin-api@0.6.19
+
 ## 1.22.6
 
 ### Patch Changes

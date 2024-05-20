@@ -1,5 +1,11 @@
 # @backstage/cli-node
 
+## 0.2.6
+
+### Patch Changes
+
+- 93be042: Upgraded @yarnpkg/parsers to stable 3.0
+
 ## 0.2.5
 
 ### Patch Changes

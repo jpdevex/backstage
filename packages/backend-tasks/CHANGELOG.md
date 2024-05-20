@@ -1,5 +1,14 @@
 # @backstage/backend-tasks
 
+## 0.5.24
+
+### Patch Changes
+
+- 736bc3c: Marked all exports as deprecated and pointed at `@backstage/backend-plugin-api` and `@backstage/backend-defaults`
+- Updated dependencies
+  - @backstage/backend-common@0.22.1
+  - @backstage/backend-plugin-api@0.6.19
+
 ## 0.5.23
 
 ### Patch Changes

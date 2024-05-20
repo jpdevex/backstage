@@ -1,5 +1,13 @@
 # @backstage/plugin-scaffolder-react
 
+## 1.8.6
+
+### Patch Changes
+
+- 86dc29d: Links that are rendered in the markdown in the `ScaffolderField` component are now opened in new tabs.
+- Updated dependencies
+  - @backstage/theme@0.5.6
+
 ## 1.8.5
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @backstage/plugin-search-backend-node
 
+## 1.2.24
+
+### Patch Changes
+
+- 5b6f979: Split backend search plugin startup into "init" and "start" stages to ensure necessary initialization has happened before startup
+- Updated dependencies
+  - @backstage/backend-tasks@0.5.24
+  - @backstage/backend-common@0.22.1
+  - @backstage/backend-plugin-api@0.6.19
+
 ## 1.2.22
 
 ### Patch Changes

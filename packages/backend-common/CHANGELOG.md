@@ -1,5 +1,14 @@
 # @backstage/backend-common
 
+## 0.22.1
+
+### Patch Changes
+
+- c6c0919: Updated configuration schema to include the `useRedisSets` cache config option.
+- Updated dependencies
+  - @backstage/backend-app-api@0.7.6
+  - @backstage/backend-plugin-api@0.6.19
+
 ## 0.22.0
 
 ### Minor Changes

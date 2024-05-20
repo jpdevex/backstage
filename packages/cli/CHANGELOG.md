@@ -1,5 +1,14 @@
 # @backstage/cli
 
+## 0.26.6
+
+### Patch Changes
+
+- 009da47: Fix `versions:check --fix` when `yarn.lock` has multiple joint versions in the same section
+- 9ee948a: Bump `esbuild` target for package builds to `ES2022`.
+- Updated dependencies
+  - @backstage/cli-node@0.2.6
+
 ## 0.26.5
 
 ### Patch Changes

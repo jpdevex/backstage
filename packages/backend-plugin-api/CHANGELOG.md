@@ -1,5 +1,11 @@
 # @backstage/backend-plugin-api
 
+## 0.6.19
+
+### Patch Changes
+
+- 6551b3d: Moved the declaration of the `SchedulerService` here, along with prefixed versions of all of the types it depends on, from `@backstage/backend-tasks`
+
 ## 0.6.18
 
 ### Patch Changes

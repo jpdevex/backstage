@@ -1,5 +1,14 @@
 # @backstage/plugin-scaffolder-backend-module-github
 
+## 0.2.9
+
+### Patch Changes
+
+- f145a04: Added handling for dry run to githubPullRequest and githubWebhook and added tests for this functionality
+- Updated dependencies
+  - @backstage/backend-common@0.22.1
+  - @backstage/backend-plugin-api@0.6.19
+
 ## 0.2.8
 
 ### Patch Changes
